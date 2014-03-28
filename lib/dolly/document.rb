@@ -7,8 +7,6 @@ module Dolly
     include Dolly::Query
     include Dolly::NameSpace
 
-    database_name "#{self.class.name.downcase}"
-
     attr_accessor :rows, :doc, :key
     class_attribute :properties
 
